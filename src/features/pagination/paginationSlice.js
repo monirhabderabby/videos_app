@@ -1,4 +1,4 @@
-const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit");
+const { createSlice } = require("@reduxjs/toolkit");
 
 const initialState = {
     page: 1,

@@ -1,6 +1,6 @@
 import axios from "../../utils/axios";
 
-export const getVideos = async (tags, search) => {
+export const getVideos = async (tags, search, page) => {
     let queryString = "";
 
     if (tags?.length > 0) {
@@ -9,6 +9,12 @@ export const getVideos = async (tags, search) => {
 
     if (search !== "") {
         queryString += `&q=${search}`;
+    }
+
+    if (queryString !== "") {
+        queryString += `&_page=${page}&_limit=3`;
+    } else {
+        queryString += `_page=${page}&_limit=3`;
     }
 
     const response = await axios.get(`/videos/?${queryString}`);
