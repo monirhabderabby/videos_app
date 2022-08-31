@@ -104,6 +104,51 @@
             "tags": ["tailwind", "css", "ui"],
             "likes": 0,
             "unlikes": 0
+        },
+        {
+            "id": 8,
+            "title": "চোখ দিয়ে মাউস বানিয়ে ফেলো || Bangla opencv project || virtual mouse || Eye controlled Mouse | python",
+            "description": "You just move your eyes and the mouse moves. You blink and the mouse clicks. Wthat fun!! I will do such a fun project in this project. Me and Ashraf vai.",
+            "author": "Jhankar mahbub",
+            "avatar": "https://scontent.fdac27-1.fna.fbcdn.net/v/t31.18172-8/22384087_10154819682976891_5369315647445272063_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEYRh5WBqLT0UGvtT8OPyko1njAXCuRU5nWeMBcK5FTmQ6xvyZvCxAL_QorwptQUcod9kQaYK3v-GYjoSzwGSp-&_nc_ohc=O0tj01XVyeYAX8f6W8j&_nc_ht=scontent.fdac27-1.fna&oh=00_AT8T3YTjbYHTfam2jGIruEzWjYhADxQ3YeC0vCK6U30ADA&oe=633629EA",
+            "date": "Oct 15, 2021",
+            "duration": "32:33",
+            "views": "20K",
+            "link": "https://www.youtube.com/watch?v=umsJC28hPmo",
+            "thumbnail": "https://i.postimg.cc/MGnhDFvt/Screenshot.png",
+            "tags": ["python", "css", "ui"],
+            "likes": 0,
+            "unlikes": 0
+        },
+        {
+            "id": 9,
+            "title": "Learn python | python project | Jhankar Mahbub Python tutorial",
+            "description": "You just move your eyes and the mouse moves. You blink and the mouse clicks. Wthat fun!! I will do such a fun project in this project. Me and Ashraf vai.",
+            "author": "Jhankar mahbub",
+            "avatar": "https://scontent.fdac27-1.fna.fbcdn.net/v/t31.18172-8/22384087_10154819682976891_5369315647445272063_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEYRh5WBqLT0UGvtT8OPyko1njAXCuRU5nWeMBcK5FTmQ6xvyZvCxAL_QorwptQUcod9kQaYK3v-GYjoSzwGSp-&_nc_ohc=O0tj01XVyeYAX8f6W8j&_nc_ht=scontent.fdac27-1.fna&oh=00_AT8T3YTjbYHTfam2jGIruEzWjYhADxQ3YeC0vCK6U30ADA&oe=633629EA",
+            "date": "Oct 15, 2021",
+            "duration": "32:33",
+            "views": "20K",
+            "link": "https://www.youtube.com/watch?v=mD5ApeJHjkw",
+            "thumbnail": "https://i.postimg.cc/Jn23QpH3/Screenshot-1.png",
+            "tags": ["python", "css", "ui"],
+            "likes": 0,
+            "unlikes": 0
+        },
+        {
+            "id": 10,
+            "title": "Love with python | python project | Jhankar Mahbub Python tutorial",
+            "description": "You just move your eyes and the mouse moves. You blink and the mouse clicks. Wthat fun!! I will do such a fun project in this project. Me and Ashraf vai.",
+            "author": "Jhankar mahbub",
+            "avatar": "https://scontent.fdac27-1.fna.fbcdn.net/v/t31.18172-8/22384087_10154819682976891_5369315647445272063_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEYRh5WBqLT0UGvtT8OPyko1njAXCuRU5nWeMBcK5FTmQ6xvyZvCxAL_QorwptQUcod9kQaYK3v-GYjoSzwGSp-&_nc_ohc=O0tj01XVyeYAX8f6W8j&_nc_ht=scontent.fdac27-1.fna&oh=00_AT8T3YTjbYHTfam2jGIruEzWjYhADxQ3YeC0vCK6U30ADA&oe=633629EA",
+            "date": "Oct 15, 2021",
+            "duration": "32:33",
+            "views": "20K",
+            "link": "https://www.youtube.com/watch?v=mD5ApeJHjkw",
+            "thumbnail": "https://i.postimg.cc/prkmZT6w/Screenshot-2.png",
+            "tags": ["python", "css", "ui"],
+            "likes": 0,
+            "unlikes": 0
         }
     ],
     "tags": [
@@ -146,6 +191,10 @@
         {
             "id": 10,
             "title": "router"
+        },
+        {
+            "id": 11,
+            "title": "python"
         }
     ]
 }
