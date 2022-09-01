@@ -14,11 +14,11 @@ export default function Video() {
     const dispatch = useDispatch();
     const { videoId } = useParams();
 
+    const { id, link, title, tags, likes, unlikes } = video || {};
+
     useEffect(() => {
         dispatch(fetchVideo(videoId));
-    }, [dispatch, videoId]);
-
-    const { id, link, title, tags } = video || {};
+    }, [dispatch, videoId, likes, unlikes]);
 
     // decide what to render
     let content = null;

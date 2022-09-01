@@ -13,11 +13,13 @@ export default function VideGrid() {
     // get pagination number
     const { page } = useSelector((state) => state.pagination);
 
+    const { author } = useSelector((state) => state.author);
+
     const { tags, search } = useSelector((state) => state.filter);
 
     useEffect(() => {
-        dispatch(fetchVideos({ tags, search, page }));
-    }, [dispatch, tags, search, page]);
+        dispatch(fetchVideos({ tags, search, page, author }));
+    }, [dispatch, tags, search, page, author]);
 
     // decide what to render
     let content;
