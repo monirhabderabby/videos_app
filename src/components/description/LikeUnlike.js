@@ -1,19 +1,10 @@
 import { useDispatch } from "react-redux";
 import likeImage from "../../assets/like.svg";
 import unlikeImage from "../../assets/unlike.svg";
-import { UpdateLikeUnlikesAsync } from "../../features/videos/videosSlice";
 
 export default function LikeUnlike({ likes, unlikes, id }) {
     const dispatch = useDispatch();
-    const LikesUnlikeshandler = (status) => {
-        let data;
-        if (status === "likes") {
-            data = likes + 1;
-        } else {
-            data = unlikes + 1;
-        }
-        dispatch(UpdateLikeUnlikesAsync({ status, id, data }));
-    };
+    const LikesUnlikeshandler = (status) => {};
     return (
         <div className="flex gap-10 w-48">
             <div className="flex gap-1">

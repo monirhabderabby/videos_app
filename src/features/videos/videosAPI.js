@@ -19,9 +19,9 @@ export const getVideos = async (tags, search, page, author) => {
     }
 
     // filtering by author
-    // if (author !== "") {
-    //     queryString += `&author=${author}`;
-    // }
+    if (author !== "") {
+        queryString = `author=${author}`;
+    }
 
     const response = await axios.get(`/videos/?${queryString}`);
 
