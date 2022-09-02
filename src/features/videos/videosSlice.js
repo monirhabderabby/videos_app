@@ -39,5 +39,4 @@ const videoSlice = createSlice({
     },
 });
 
-export const { updateLike, updateUnlike } = videoSlice.actions;
 export default videoSlice.reducer;
