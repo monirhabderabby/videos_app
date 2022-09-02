@@ -1,4 +1,4 @@
-import { getVideo, updateLikeForAsync } from "./videoAPI";
+import { getVideo } from "./videoAPI";
 
 const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit");
 
@@ -9,10 +9,37 @@ const initialState = {
     error: "",
 };
 
-export const updateLikeandUnlike = createAsyncThunk(
-    "video/updateLikeandUnlike",
-    async (id, updatedLikes) => {
-        const result = await updateLikeForAsync(id, updatedLikes);
+export const updatedLike = createAsyncThunk(
+    "video/updatedLike",
+    async ({ id, likes }) => {
+        const response = await fetch(`http://localhost:9000/videos/${id}`, {
+            method: "PATCH",
+            body: JSON.stringify({
+                likes: likes + 1,
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+            },
+        });
+        const likedV = await response.json();
+        return likedV;
+    }
+);
+export const updatedUnLike = createAsyncThunk(
+    "video/updatedLike",
+    async ({ id, unlikes }) => {
+        const response = await fetch(`http://localhost:9000/videos/${id}`, {
+            method: "PATCH",
+            body: JSON.stringify({
+                unlikes: unlikes + 1,
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+            },
+        });
+        const likedV = await response.json();
+        console.log(likedV);
+        return likedV;
     }
 );
 
@@ -27,10 +54,10 @@ const videoSlice = createSlice({
     initialState,
     reducers: {
         updateLike: (state) => {
-            state.video.likes += 1;
+            state.video.likes++;
         },
         updateUnlike: (state) => {
-            state.video.unlikes += 1;
+            state.video.unlikes++;
         },
     },
     extraReducers: (builder) => {
@@ -48,6 +75,9 @@ const videoSlice = createSlice({
                 state.video = {};
                 state.isError = true;
                 state.error = action.error?.message;
+            })
+            .addCase(updatedLike.fulfilled, (state, action) => {
+                state.video = action.payload;
             });
     },
 });

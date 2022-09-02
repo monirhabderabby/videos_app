@@ -2,20 +2,22 @@ import { useDispatch } from "react-redux";
 import likeImage from "../../assets/like.svg";
 import unlikeImage from "../../assets/unlike.svg";
 import {
+    updatedLike,
+    updatedUnLike,
     updateLike,
-    updateLikeandUnlike,
     updateUnlike,
 } from "../../features/video/videoSlice";
 
 export default function LikeUnlike({ id, likes, unlikes }) {
     const dispatch = useDispatch();
-    const LikesUnlikeshandler = (status) => {
-        if (status === "likes") {
-            dispatch(updateLike());
-            dispatch(updateLikeandUnlike(id, likes + 1));
-        } else {
-            dispatch(updateUnlike());
-        }
+
+    const Likesshandler = () => {
+        dispatch(updateLike());
+        dispatch(updatedLike({ id, likes }));
+    };
+    const unlikesHandler = () => {
+        dispatch(updateUnlike());
+        dispatch(updatedUnLike({ id, unlikes }));
     };
 
     return (
@@ -26,7 +28,7 @@ export default function LikeUnlike({ id, likes, unlikes }) {
                 </div>
                 <div
                     className="text-sm leading-[1.7142857] text-slate-600"
-                    onClick={() => LikesUnlikeshandler("likes")}
+                    onClick={() => Likesshandler("likes")}
                 >
                     {likes}
                 </div>
@@ -37,7 +39,7 @@ export default function LikeUnlike({ id, likes, unlikes }) {
                 </div>
                 <div
                     className="text-sm leading-[1.7142857] text-slate-600"
-                    onClick={() => LikesUnlikeshandler("unlikes")}
+                    onClick={unlikesHandler}
                 >
                     {unlikes}
                 </div>

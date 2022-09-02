@@ -16,7 +16,7 @@
         "react",
         "tips"
       ],
-      "likes": 6,
+      "likes": null,
       "unlikes": 2
     },
     {
@@ -34,8 +34,8 @@
         "vscode",
         "tips"
       ],
-      "likes": 7,
-      "unlikes": 3,
+      "likes": null,
+      "unlikes": 4,
       "status": "unlikes1"
     },
     {
@@ -53,7 +53,7 @@
         "tailwind",
         "css"
       ],
-      "likes": 0,
+      "likes": 2,
       "unlikes": 0
     },
     {
@@ -72,7 +72,7 @@
         "javascript",
         "tips"
       ],
-      "likes": 0,
+      "likes": 8,
       "unlikes": 0
     },
     {
